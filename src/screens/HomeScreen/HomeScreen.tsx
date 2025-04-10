@@ -1,20 +1,8 @@
 import React, { FC } from 'react';
-import { useIntl } from 'react-intl';
-import { useNavigation } from '@react-navigation/native';
-
-import { HomeScreenNavigationProp } from './types/HomeScreen.types';
-import { HomeButton, HomeContainer } from './styles/HomeScreen.styles';
+import Home from '../../components/Home/Home';
 
 const HomeScreen: FC = () => {
-  const { formatMessage } = useIntl();
-
-  const navigation = useNavigation<HomeScreenNavigationProp>();
-
-  return (
-    <HomeContainer>
-      <HomeButton title={formatMessage({ id: 'goToPreBattleSequenceButton' })} onPress={() => navigation.navigate('PreBattleSequence')} />
-    </HomeContainer>
-  );
+  return <Home />;
 };
 
 export default HomeScreen;

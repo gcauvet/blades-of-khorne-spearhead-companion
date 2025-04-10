@@ -1,10 +1,16 @@
 import React from 'react';
+import { Text } from 'react-native';
 import { FormattedMessage } from 'react-intl';
 
-import { Text } from 'react-native';
 import { PreBattleSequenceContainer, PreBattleSequenceItem, PreBattleSequenceList } from './styles/PreBattleSequence.styles';
 
+import useTranslationTitle from '../../hooks/useTranslationTitle';
+
 const PreBattleSequence: React.FC = () => {
+  const setNavigationTitle = useTranslationTitle();
+
+  setNavigationTitle('preBattleSequenceTitle');
+
   const sequenceSteps = [
     { id: 'preBattleSequenceStep1' },
     { id: 'preBattleSequenceStep2' },

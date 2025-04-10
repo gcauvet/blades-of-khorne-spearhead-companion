@@ -3,7 +3,7 @@ const en = {
   goToPreBattleSequenceButton: 'Pre-Battle Sequence',
 
   // PreBattleSequence
-  preBattleSequenceTitle: 'Pre-Battle Sequence', // // TODO Add intl to Screen options in App
+  preBattleSequenceTitle: 'Pre-Battle Sequence',
   preBattleSequenceStep1: 'Roll off. Winner chooses who is attacker and who is defender.',
   preBattleSequenceStep2: 'Attacker picks regiment ability and enhancement, then defender does so.',
   preBattleSequenceStep3: 'Defender chooses Aqshy or Ghyran side of realm battlefield.',

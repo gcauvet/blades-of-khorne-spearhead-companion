@@ -1,5 +1,5 @@
 import React from 'react';
-import { IntlProvider } from 'react-intl';
+import { IntlProvider, useIntl } from 'react-intl';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -27,7 +27,7 @@ const App = (): JSX.Element => {
       <NavigationContainer>
         <Navigator initialRouteName='Home'>
           <Screen name='Home' component={HomeScreen} />
-          <Screen name='PreBattleSequence' component={PreBattleSequence} options={{ title: 'Pre-Battle Sequence' }} />
+          <Screen name='PreBattleSequence' component={PreBattleSequence} />
         </Navigator>
       </NavigationContainer>
     </IntlProvider>
