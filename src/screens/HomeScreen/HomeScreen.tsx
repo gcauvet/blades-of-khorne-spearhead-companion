@@ -1,14 +1,18 @@
 import React, { FC } from 'react';
-import { View } from 'react-native';
+import { Button, View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import homeScreenStyle from './styles/HomeScreen.styles';
+import { HomeScreenNavigationProp } from './types/HomeScreen.types';
 
-import ExampleComponent from '../../components/ExampleComponent';
+const HomeScreen: FC = () => {
+  const navigation = useNavigation<HomeScreenNavigationProp>();
 
-const HomeScreen: FC = () => (
-  <View style={homeScreenStyle.container}>
-    <ExampleComponent title='Welcome to the Home Screen!' />
-  </View>
-);
+  return (
+    <View style={homeScreenStyle.container}>
+      <Button title='Go to Pre-Battle Sequence' onPress={() => navigation.navigate('PreBattleSequence')} />
+    </View>
+  );
+};
 
 export default HomeScreen;
