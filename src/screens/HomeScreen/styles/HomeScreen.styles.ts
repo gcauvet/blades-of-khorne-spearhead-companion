@@ -1,14 +1,12 @@
-import { StyleSheet } from 'react-native';
+import styled from 'styled-components/native';
 
-const textColor = '#f5f5f5';
+export const HomeContainer = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+`;
 
-const homeScreenStyle = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    backgroundColor: textColor,
-    flex: 1,
-    justifyContent: 'center',
-  },
-});
-
-export default homeScreenStyle;
+export const HomeButton = styled.Button`
+  color: #fff;
+`;

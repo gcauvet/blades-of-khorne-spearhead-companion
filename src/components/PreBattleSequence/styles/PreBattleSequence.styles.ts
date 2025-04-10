@@ -1,17 +1,23 @@
-import { StyleSheet } from 'react-native';
+import styled from 'styled-components/native';
 
-const preBattleSequenceStyle = StyleSheet.create({
-  container: {
-    boxSizing: 'border-box',
-    fontFamily: 'Arial, sans-serif',
-    height: '100vh',
-    overflowY: 'auto',
-    padding: '20px',
-    paddingBottom: '70px', // Added padding to ensure the last element is fully visible
-  },
-  list: {
-    marginBottom: '10px',
-  },
-});
+export const PreBattleSequenceContainer = styled.ScrollView`
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+`;
 
-export default preBattleSequenceStyle;
+export const PreBattleSequenceTitle = styled.Text`
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+`;
+
+export const PreBattleSequenceList = styled.View`
+  margin-bottom: 20px;
+`;
+
+export const PreBattleSequenceItem = styled.Text`
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 22px;
+`;
