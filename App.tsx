@@ -1,22 +1,37 @@
 import React from 'react';
+import { IntlProvider } from 'react-intl';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import '@expo/metro-runtime';
 
+import enMessages from './src/intl/en';
+import frMessages from './src/intl/fr';
+
 import HomeScreen from './src/screens/HomeScreen/HomeScreen';
 import PreBattleSequence from './src/components/PreBattleSequence/PreBattleSequence';
 
-const Stack = createStackNavigator();
+const messages = {
+  en: enMessages,
+  fr: frMessages,
+};
 
-const App = (): JSX.Element => (
-  <NavigationContainer>
-    <Stack.Navigator initialRouteName='Home'>
-      <Stack.Screen name='Home' component={HomeScreen} />
-      <Stack.Screen name='PreBattleSequence' component={PreBattleSequence} />
-    </Stack.Navigator>
-  </NavigationContainer>
-);
+const { Navigator, Screen } = createStackNavigator();
+
+const App = (): JSX.Element => {
+  const locale = 'en';
+
+  return (
+    <IntlProvider locale={locale} messages={messages[locale]}>
+      <NavigationContainer>
+        <Navigator initialRouteName='Home'>
+          <Screen name='Home' component={HomeScreen} />
+          <Screen name='PreBattleSequence' component={PreBattleSequence} options={{ title: 'Pre-Battle Sequence' }} />
+        </Navigator>
+      </NavigationContainer>
+    </IntlProvider>
+  );
+};
 
 export default App;

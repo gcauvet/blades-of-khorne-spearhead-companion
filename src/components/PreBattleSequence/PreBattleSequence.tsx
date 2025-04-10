@@ -1,25 +1,28 @@
 import React from 'react';
-import { PreBattleSequenceContainer, PreBattleSequenceItem, PreBattleSequenceList, PreBattleSequenceTitle } from './styles/PreBattleSequence.styles';
+import { FormattedMessage } from 'react-intl';
+
+import { Text } from 'react-native';
+import { PreBattleSequenceContainer, PreBattleSequenceItem, PreBattleSequenceList } from './styles/PreBattleSequence.styles';
 
 const PreBattleSequence: React.FC = () => {
   const sequenceSteps = [
-    { id: 'step1', text: 'Roll off. Winner chooses who is attacker and who is defender.' },
-    { id: 'step2', text: 'Attacker picks regiment ability and enhancement, then defender does so.' },
-    { id: 'step3', text: 'Defender chooses Aqshy or Ghyran side of realm battlefield.' },
-    { id: 'step4', text: 'Defender picks deployment map (horizontal or diagonal) and chooses which territory is theirs.' },
-    {
-      id: 'step5',
-      text: `Defender sets up 1 large and 1 small terrain feature. Then attacker does the same. Each terrain feature must be set up wholly within friendly territory, more than 6" from all other terrain features and more than 3" from both long battlefield edges and enemy territory. Terrain features cannot be set up on objectives.`,
-    },
-    { id: 'step6', text: 'Attacker sets up their army first, followed by the defender. Each unit must be set up wholly within friendly territory and more than 6" from enemy territory.' },
+    { id: 'preBattleSequenceStep1' },
+    { id: 'preBattleSequenceStep2' },
+    { id: 'preBattleSequenceStep3' },
+    { id: 'preBattleSequenceStep4' },
+    { id: 'preBattleSequenceStep5' },
+    { id: 'preBattleSequenceStep6' },
   ];
 
   return (
     <PreBattleSequenceContainer>
-      <PreBattleSequenceTitle>Pre-Battle Sequence</PreBattleSequenceTitle>
       <PreBattleSequenceList>
-        {sequenceSteps.map(({ id, text }) => (
-          <PreBattleSequenceItem key={id}>{text}</PreBattleSequenceItem>
+        {sequenceSteps.map(({ id }, index) => (
+          <PreBattleSequenceItem key={id}>
+            <Text>
+              <b>{index + 1}.</b> <FormattedMessage id={id} />
+            </Text>
+          </PreBattleSequenceItem>
         ))}
       </PreBattleSequenceList>
     </PreBattleSequenceContainer>

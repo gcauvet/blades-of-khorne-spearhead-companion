@@ -6,12 +6,6 @@ export const PreBattleSequenceContainer = styled.ScrollView`
   background-color: #ffffff;
 `;
 
-export const PreBattleSequenceTitle = styled.Text`
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-`;
-
 export const PreBattleSequenceList = styled.View`
   margin-bottom: 20px;
 `;
