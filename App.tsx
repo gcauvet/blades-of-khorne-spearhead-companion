@@ -11,6 +11,8 @@ import Cinzel from './src/assets/fonts/Cinzel-VariableFont_wght.ttf';
 import UncialAntiqua from './src/assets/fonts/UncialAntiqua-Regular.ttf';
 import MedievalSharp from './src/assets/fonts/MedievalSharp-Regular.ttf';
 
+import { preBattleSequenceScreenOptions } from './src/screens/PreBattleSequenceScreen/styles/PreBattleSequence.styles';
+
 import enMessages from './src/intl/en';
 import frMessages from './src/intl/fr';
 
@@ -31,7 +33,7 @@ const App = (): JSX.Element => {
       <NavigationContainer>
         <Navigator initialRouteName='Home'>
           <Screen name='Home' component={HomeScreen} options={{ headerShown: false }} />
-          <Screen name='PreBattleSequence' component={PreBattleSequenceScreen} />
+          <Screen name='PreBattleSequence' component={PreBattleSequenceScreen} options={preBattleSequenceScreenOptions} />
         </Navigator>
       </NavigationContainer>
     </IntlProvider>

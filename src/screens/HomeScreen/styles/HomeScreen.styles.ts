@@ -5,15 +5,16 @@ import { TouchableOpacity } from 'react-native';
 import khorneLogo from '../../../assets/images/home/khorne-logo.png';
 
 export const HomeContainer = styled(LinearGradient as unknown as React.ComponentType).attrs(() => ({
-  colors: ['#8B0000', '#000000'], // Default gradient colors
-  start: { x: 0, y: 0 }, // Default start point
-  end: { x: 1, y: 1 }, // Default end point
+  colors: ['#8B0000', '#000000'],
+  start: { x: 0, y: 0 },
+  end: { x: 1, y: 1 },
 }))`
   flex: 1;
   justify-content: center;
   align-items: center;
   padding: 20px;
 `;
+
 export const GoToPreBattleSequenceButton = styled(TouchableOpacity)`
   background-color: #d32f2f;
   padding: 15px 30px;
