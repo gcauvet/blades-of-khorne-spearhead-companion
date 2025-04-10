@@ -1,6 +1,6 @@
 const fr = {
   // HomeScreen
-  goToPreBattleSequenceButton: 'Aller à la Séquence Pré-Bataille',
+  goToPreBattleSequenceButton: 'Séquence Pré-Bataille',
 
   // PreBattleSequence
   preBattleSequenceTitle: 'Séquence Pré-Bataille',

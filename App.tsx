@@ -10,7 +10,7 @@ import enMessages from './src/intl/en';
 import frMessages from './src/intl/fr';
 
 import HomeScreen from './src/screens/HomeScreen/HomeScreen';
-import PreBattleSequence from './src/components/PreBattleSequence/PreBattleSequence';
+import PreBattleSequence from './src/screens/PreBattleSequence/PreBattleSequence';
 
 const messages = {
   en: enMessages,

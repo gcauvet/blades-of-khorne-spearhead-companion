@@ -1,6 +1,6 @@
 const en = {
   // HomeScreen
-  goToPreBattleSequenceButton: 'Go to Pre-Battle Sequence',
+  goToPreBattleSequenceButton: 'Pre-Battle Sequence',
 
   // PreBattleSequence
   preBattleSequenceTitle: 'Pre-Battle Sequence', // // TODO Add intl to Screen options in App
