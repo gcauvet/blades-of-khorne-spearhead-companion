@@ -1,11 +1,30 @@
 import { FC } from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import { HomeProps } from '../types/Home.types';
-import { GoToPreBattleSequenceButton, HomeContainer } from '../styles/HomeScreen.styles';
+import { HomeDescription, HomeTitle, Footer, GoToPreBattleSequenceButton, HomeContainer, Logo, ButtonText } from '../styles/HomeScreen.styles';
 
-const Home: FC<HomeProps> = ({ formatMessage, navigation }): JSX.Element => (
+const Home: FC<HomeProps> = ({ navigation }): JSX.Element => (
   <HomeContainer>
-    <GoToPreBattleSequenceButton title={formatMessage({ id: 'goToPreBattleSequenceButton' })} onPress={() => navigation.navigate('PreBattleSequence')} />
+    <HomeTitle>
+      <FormattedMessage id='homeTitle' />
+    </HomeTitle>
+
+    <Logo />
+
+    <HomeDescription>
+      <FormattedMessage id='appDescription' />
+    </HomeDescription>
+
+    <GoToPreBattleSequenceButton onPress={() => navigation.navigate('PreBattleSequence')}>
+      <ButtonText>
+        <FormattedMessage id='goToPreBattleSequenceButton' />
+      </ButtonText>
+    </GoToPreBattleSequenceButton>
+
+    <Footer>
+      <FormattedMessage id='homeFooter' />
+    </Footer>
   </HomeContainer>
 );
 

@@ -1,6 +1,9 @@
 const en = {
   // HomeScreen
   goToPreBattleSequenceButton: 'Pre-Battle Sequence',
+  homeTitle: 'Blades of Khorne Spearhead Companion',
+  homeFooter: 'Blood for the Blood God! Skulls for the Skull Throne!',
+  appDescription: 'Strategize your moves, follow the plan and crush your enemies!',
 
   // PreBattleSequence
   preBattleSequenceTitle: 'Pre-Battle Sequence',

@@ -16,6 +16,8 @@
     "@react-navigation/native": "^7.1.6",
     "@react-navigation/stack": "^7.2.10",
     "expo": "^52.0.44",
+    "expo-font": "^13.0.4",
+    "expo-linear-gradient": "^14.0.2",
     "metro-react-native-babel-preset": "^0.77.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
