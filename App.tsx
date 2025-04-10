@@ -1,5 +1,5 @@
 import React from 'react';
-import { IntlProvider, useIntl } from 'react-intl';
+import { IntlProvider } from 'react-intl';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -10,7 +10,7 @@ import enMessages from './src/intl/en';
 import frMessages from './src/intl/fr';
 
 import HomeScreen from './src/screens/HomeScreen/HomeScreen';
-import PreBattleSequence from './src/screens/PreBattleSequence/PreBattleSequence';
+import PreBattleSequenceScreen from './src/screens/PreBattleSequenceScreen/PreBattleSequenceScreen';
 
 const messages = {
   en: enMessages,
@@ -27,7 +27,7 @@ const App = (): JSX.Element => {
       <NavigationContainer>
         <Navigator initialRouteName='Home'>
           <Screen name='Home' component={HomeScreen} />
-          <Screen name='PreBattleSequence' component={PreBattleSequence} />
+          <Screen name='PreBattleSequence' component={PreBattleSequenceScreen} />
         </Navigator>
       </NavigationContainer>
     </IntlProvider>
