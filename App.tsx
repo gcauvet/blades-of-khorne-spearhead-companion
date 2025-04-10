@@ -26,7 +26,7 @@ const App = (): JSX.Element => {
     <IntlProvider locale={locale} messages={messages[locale]}>
       <NavigationContainer>
         <Navigator initialRouteName='Home'>
-          <Screen name='Home' component={HomeScreen} />
+          <Screen name='Home' component={HomeScreen} options={{ headerShown: false }} />
           <Screen name='PreBattleSequence' component={PreBattleSequenceScreen} />
         </Navigator>
       </NavigationContainer>

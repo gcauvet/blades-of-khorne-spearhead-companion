@@ -7,6 +7,6 @@ export const HomeContainer = styled.View`
   background-color: #f8f9fa;
 `;
 
-export const HomeButton = styled.Button`
+export const GoToPreBattleSequenceButton = styled.Button`
   color: #fff;
 `;
