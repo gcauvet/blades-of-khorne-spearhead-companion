@@ -15,6 +15,19 @@ const en = {
     'Defender sets up 1 large and 1 small terrain feature. Then attacker does the same. Each terrain feature must be set up wholly within friendly territory, more than 6" from all other terrain features and more than 3" from both long battlefield edges and enemy territory. Terrain features cannot be set up on objectives.',
   preBattleSequenceStep6: 'Attacker sets up their army first, followed by the defender. Each unit must be set up wholly within friendly territory and more than 6" from enemy territory.',
 
+  selectRegimentAbility: 'Select Your Regiment Ability',
+  selectEnhancement: 'Select Your Enhancement',
+
+  resanguination: 'RESANGUINATION',
+  resanguinationDescription: 'Pick a visible friendly unit wholly within 16" of your general, then make a chanting roll of D6. On a 3+, Heal (D3) that unit.',
+  theCrimsonPlate: 'THE CRIMSON PLATE',
+  theCrimsonPlateDescription: 'Your general has Ward (5+).',
+  headhunter: 'HEADHUNTER',
+  headhunterDescription: 'Pick an enemy Hero in combat with your general. Your general has Strike-First this phase, but all attacks made by them this phase must target that enemy Hero',
+  unholyFlames: 'UNHOLY FLAMES',
+  unholyFlamesDescription:
+    'Pick a visible friendly unit wholly within 16" of your general, then make a chanting roll of D6.  On a 4+, add 1 to the Rend characteristic of that unit’s melee weapons until the start of your next turn.',
+
   favoredOfKhorne: 'FAVOURED OF KHORNE',
   favoredOfKhorneDescription: 'Roll a dice. On a 2+, you receive 1 blood tithe point.',
   bloodWokenRunes: 'BLOOD-WOKEN RUNES',

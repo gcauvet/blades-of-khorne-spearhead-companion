@@ -10,6 +10,14 @@ export const PreBattleSequenceContainer = styled(LinearGradient as unknown as Re
   padding: 20px;
 `;
 
+export const PreBattleSequenceScrollContainer = styled.ScrollView.attrs(() => ({
+  contentContainerStyle: {
+    flexGrow: 1,
+  },
+}))`
+  flex: 1;
+`;
+
 export const PreBattleSequenceList = styled.View`
   margin-bottom: 20px;
 `;
@@ -37,6 +45,7 @@ export const AbilityBlockWrapper = styled.View`
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  width: 100%; /* Ensure the wrapper takes the full width */
 `;
 
 export const AbilityBlock = styled.TouchableOpacity<{ isSelected: boolean }>`
@@ -47,7 +56,7 @@ export const AbilityBlock = styled.TouchableOpacity<{ isSelected: boolean }>`
   align-items: center;
   justify-content: center;
   border: ${({ isSelected }) => (isSelected ? '2px solid #fff' : 'none')}; /* Add a border if selected */
-  width: 45%; /* Ensure blocks take up a percentage of the available space */
+  width: 40%; /* Ensure blocks take up a percentage of the available space */
   flex-grow: 1; /* Allow blocks to grow dynamically based on content */
   align-self: stretch; /* Ensure all blocks stretch to the same height in their row */
 `;
@@ -65,4 +74,29 @@ export const AbilityBlockDescription = styled.Text`
   font-family: 'MedievalSharp';
   text-align: center;
   margin-top: 5px;
+`;
+
+export const Separator = styled.View`
+  height: 1px;
+  background-color: #ccc; /* Light gray color for the separator */
+  margin: 20px 0; /* Add spacing above and below the separator */
+  width: 70%; /* Ensure the separator spans the full width */
+  display: flex;
+`;
+
+export const AbilityBlockTitle = styled.Text`
+  font-size: 18px;
+  font-weight: bold;
+  color: #cece;
+  font-family: 'Cinzel';
+  text-align: center;
+  margin: 20px 0; /* Add spacing above and below the title */
+`;
+
+export const AbilityBlockTitleContainer = styled.View`
+  display: flex;
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+  margin-top: 10px; /* Add spacing above the title */
+  width: 100%; /* Ensure the container spans the full width */
 `;
