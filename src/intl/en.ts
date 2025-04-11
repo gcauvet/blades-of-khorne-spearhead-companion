@@ -14,6 +14,11 @@ const en = {
   preBattleSequenceStep5:
     'Defender sets up 1 large and 1 small terrain feature. Then attacker does the same. Each terrain feature must be set up wholly within friendly territory, more than 6" from all other terrain features and more than 3" from both long battlefield edges and enemy territory. Terrain features cannot be set up on objectives.',
   preBattleSequenceStep6: 'Attacker sets up their army first, followed by the defender. Each unit must be set up wholly within friendly territory and more than 6" from enemy territory.',
+
+  favoredOfKhorne: 'FAVOURED OF KHORNE',
+  favoredOfKhorneDescription: 'Roll a dice. On a 2+, you receive 1 blood tithe point.',
+  bloodWokenRunes: 'BLOOD-WOKEN RUNES',
+  bloodWokenRunesDescription: 'Friendly units have Ward (5+) if they have used a Fight ability in the same phase.',
 };
 
 export default en;
