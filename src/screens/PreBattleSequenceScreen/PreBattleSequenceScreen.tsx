@@ -32,6 +32,8 @@ const PreBattleSequenceScreen: FC = () => {
     { id: 'preBattleSequenceStep4' },
     { id: 'preBattleSequenceStep5' },
     { id: 'preBattleSequenceStep6' },
+    { id: 'preBattleSequenceStep7' },
+    { id: 'preBattleSequenceStep8' },
   ];
 
   return (

@@ -14,6 +14,8 @@ const en = {
   preBattleSequenceStep5:
     'Defender sets up 1 large and 1 small terrain feature. Then attacker does the same. Each terrain feature must be set up wholly within friendly territory, more than 6" from all other terrain features and more than 3" from both long battlefield edges and enemy territory. Terrain features cannot be set up on objectives.',
   preBattleSequenceStep6: 'Attacker sets up their army first, followed by the defender. Each unit must be set up wholly within friendly territory and more than 6" from enemy territory.',
+  preBattleSequenceStep7: 'Attacker choose who takes the first turn.',
+  preBattleSequenceStep8: 'Draw twist card.',
 
   selectRegimentAbility: 'Select Your Regiment Ability',
   selectEnhancement: 'Select Your Enhancement',
