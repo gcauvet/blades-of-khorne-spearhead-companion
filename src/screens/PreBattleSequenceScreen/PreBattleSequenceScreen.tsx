@@ -43,8 +43,6 @@ const PreBattleSequenceScreen: FC = () => {
       selectedEnhancement={selectedEnhancement}
       handleSelectAbility={handleSelectAbility}
       handleSelectEnhancement={handleSelectEnhancement}
-      abilities={Abilities}
-      enhancements={Enhancements}
     />
   );
 };

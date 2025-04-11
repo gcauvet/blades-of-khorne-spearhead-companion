@@ -3,7 +3,7 @@ import { Text } from 'react-native';
 import { FormattedMessage } from 'react-intl';
 
 import { PreBattleSequenceProps } from '../types/PreBattleSequence.types';
-import { AbilityBlockWrapper, PreBattleSequenceContainer, PreBattleSequenceItem, PreBattleSequenceList, PreBattleSequenceScrollContainer, Separator } from '../styles/PreBattleSequence.styles';
+import { AbilityBlockWrapper, PreBattleSequenceContainer, PreBattleSequenceItem, PreBattleSequenceList, PreBattleSequenceScrollContainer } from '../styles/PreBattleSequence.styles';
 
 import RegimentAbilities from './RegimentAbilities';
 import GeneralEnhancement from './GeneralEnhancement';
@@ -25,8 +25,6 @@ const PreBattleSequence: FC<PreBattleSequenceProps> = ({ sequenceStepsIds, selec
 
                 <AbilityBlockWrapper>
                   <RegimentAbilities selectedAbility={selectedAbility} handleSelectAbility={handleSelectAbility} />
-
-                  <Separator />
 
                   <AbilityAndEnhancementTitle id='selectEnhancement' />
 

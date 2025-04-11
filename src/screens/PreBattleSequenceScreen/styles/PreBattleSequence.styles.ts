@@ -76,14 +76,6 @@ export const AbilityBlockDescription = styled.Text`
   margin-top: 5px;
 `;
 
-export const Separator = styled.View`
-  height: 1px;
-  background-color: #ccc; /* Light gray color for the separator */
-  margin: 20px 0; /* Add spacing above and below the separator */
-  width: 70%; /* Ensure the separator spans the full width */
-  display: flex;
-`;
-
 export const AbilityAndEnhancementTitleContainerBlockTitle = styled.Text`
   font-size: 18px;
   font-weight: bold;
