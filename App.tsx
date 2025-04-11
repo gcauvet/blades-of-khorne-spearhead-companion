@@ -9,15 +9,13 @@ import '@expo/metro-runtime';
 
 import Cinzel from './src/assets/fonts/Cinzel-VariableFont_wght.ttf';
 import UncialAntiqua from './src/assets/fonts/UncialAntiqua-Regular.ttf';
-import MedievalSharp from './src/assets/fonts/MedievalSharp-Regular.ttf';
-
-import { preBattleSequenceScreenOptions } from './src/screens/PreBattleSequenceScreen/styles/PreBattleSequence.styles';
 
 import enMessages from './src/intl/en';
 import frMessages from './src/intl/fr';
 
 import HomeScreen from './src/screens/HomeScreen/HomeScreen';
 import PreBattleSequenceScreen from './src/screens/PreBattleSequenceScreen/PreBattleSequenceScreen';
+import headerStyle from './App.styles';
 
 const messages = { en: enMessages, fr: frMessages };
 
@@ -26,14 +24,14 @@ const { Navigator, Screen } = createStackNavigator();
 const App = (): JSX.Element => {
   const locale = 'en';
 
-  useFonts({ Cinzel, UncialAntiqua, MedievalSharp });
+  useFonts({ Cinzel, UncialAntiqua });
 
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
       <NavigationContainer>
         <Navigator initialRouteName='Home'>
           <Screen name='Home' component={HomeScreen} options={{ headerShown: false }} />
-          <Screen name='PreBattleSequence' component={PreBattleSequenceScreen} options={preBattleSequenceScreenOptions} />
+          <Screen name='PreBattleSequence' component={PreBattleSequenceScreen} options={headerStyle} />
         </Navigator>
       </NavigationContainer>
     </IntlProvider>

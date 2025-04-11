@@ -30,14 +30,3 @@ export const PreBattleSequenceTitle = styled.Text`
   text-align: center;
   font-family: 'Cinzel';
 `;
-
-export const preBattleSequenceScreenOptions = {
-  headerStyle: {
-    backgroundColor: '#8B0000',
-  },
-  headerTintColor: '#fff',
-  headerTitleStyle: {
-    fontFamily: 'Cinzel',
-    fontSize: 20,
-  },
-};
