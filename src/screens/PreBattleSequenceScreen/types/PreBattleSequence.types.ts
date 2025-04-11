@@ -2,9 +2,21 @@ export interface PreBattleSequenceProps {
   sequenceStepsIds: { id: string }[];
   selectedAbility: string;
   handleSelectAbility: (ability: string) => void;
-  abilities: typeof Abilities;
   selectedEnhancement: string;
-  enhancements: typeof Enhancements;
+  handleSelectEnhancement: (enhancement: string) => void;
+}
+
+export interface BlockTitleProps {
+  id: string;
+}
+
+export interface RegimentAbilitiesProps {
+  selectedAbility: string;
+  handleSelectAbility: (ability: string) => void;
+}
+
+export interface GeneralEnhancementProps {
+  selectedEnhancement: string;
   handleSelectEnhancement: (enhancement: string) => void;
 }
 

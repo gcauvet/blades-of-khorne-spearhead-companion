@@ -84,7 +84,7 @@ export const Separator = styled.View`
   display: flex;
 `;
 
-export const AbilityBlockTitle = styled.Text`
+export const AbilityAndEnhancementTitleContainerBlockTitle = styled.Text`
   font-size: 18px;
   font-weight: bold;
   color: #cece;
@@ -93,7 +93,7 @@ export const AbilityBlockTitle = styled.Text`
   margin: 20px 0; /* Add spacing above and below the title */
 `;
 
-export const AbilityBlockTitleContainer = styled.View`
+export const AbilityAndEnhancementTitleContainer = styled.View`
   display: flex;
   justify-content: center; /* Center the content vertically */
   align-items: center; /* Center the content horizontally */
